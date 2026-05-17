@@ -1,0 +1,55 @@
+# --- LEGO PROJECT EXCLUSIONS ---
+
+# 1. Data (Never push raw or processed images)
+data/raw/
+data/processed/
+data/external/
+
+# 2. Model Weights (Too large for GitHub)
+*.pt
+*.pth
+outputs/checkpoints/
+
+# 3. Large Datasets
+*.zip
+*.tar.gz
+*.csv
+# Un-comment the line below if you want to push metric CSVs specifically
+# !outputs/logs/*.csv
+
+# 4. Local Training Artifacts (Temporary YOLO files)
+runs/
+outputs/temp_run/
+
+# --- PYTHON & DEVELOPMENT ---
+
+# 5. Environment & Virtual Env
+venv/
+env/
+.env
+bin/
+lib/
+develop-eggs/
+dist/
+eggs/
+installed.cfg
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 6. Python Clutter
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 7. OS/Editor Specific
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 8. Logs (General)
+*.log

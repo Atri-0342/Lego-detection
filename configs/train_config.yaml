@@ -1,0 +1,17 @@
+# 🟢 Logic: Model Selection
+model: yolo11n-seg.pt 
+
+# 🟢 Logic: Hardware & Performance
+device: cpu        
+batch: 4           
+imgsz: 640         
+
+# 🟢 Logic: Training Schedule (UPDATED)
+epochs: 25         # Reduced from 100 to 25 for speed
+patience: 5        # Stop even earlier if it stops improving
+save: True         
+
+# 🟢 Logic: Optimization
+optimizer: 'AdamW' 
+lr0: 0.01          
+workers: 2

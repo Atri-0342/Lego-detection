@@ -1,0 +1,12 @@
+# 🟢 Logic: Absolute path prevents Windows 'File Not Found' errors
+path: C:/Users/atrim/OneDrive/Desktop/prac/Lego-detection/data/processed
+
+# 🟢 Logic: Relative paths from the root 'path' defined above
+train: train/images
+val: val/images
+test: test/images
+
+# 🟢 Logic: Define the labels. NC = Number of Classes
+nc: 1
+names: 
+  0: lego
